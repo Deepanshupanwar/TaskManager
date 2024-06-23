@@ -88,8 +88,8 @@ npm start
 └── README.md
 ```
 
-##3 API Endpoints:
-##User Authentication:
+## #3 API Endpoints:
+#### User Authentication:
 POST /api/user/register
 
 Request Body: { "username": "string", "email": "string", "password": "string" }
@@ -101,7 +101,7 @@ Response: 200 OK with user data and JWT token
 POST /api/user/logout
 
 
-##Task (Todo) Management:
+#### Task (Todo) Management:
 POST /api/todo/addTodo
 
 Request Body: { "title": "string", "description": "string", "startDate": "date", "endDate": "date" }
