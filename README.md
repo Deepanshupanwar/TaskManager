@@ -1,21 +1,21 @@
 # TaskManager
 The Task Manager App is a full-stack web application designed to help users manage their tasks efficiently. The app features user authentication, allowing users to register, log in, and manage their tasks (todos). Users can add, edit, delete, and view tasks, making it easy to keep track of their to-dos.
 
-##Prerequisites
+## Prerequisites
 Node.js (>= 14.x)
 MongoDB (Atlas or local instance)
 npm (or yarn)
 
-##Front-end
+## Front-end
 
-##Technologies Used:
+### Technologies Used:
 React
 React Router
 React Hot Toast
 Material UI
 Tailwind
 
-##Installation and Setup For local
+### Installation and Setup For local
 
 ```bash
 git clone <repository-url>
@@ -25,7 +25,7 @@ npm install
 npm run dev
 ```
 
-##File Structure
+### File Structure
 
 ```bash
 src
@@ -39,9 +39,9 @@ src
 └── App.jsx
 ```
 
-##Back-end
+## Back-end
 
-##Technologies Used
+### Technologies Used
 Node.js
 Express.js
 MongoDB
@@ -52,7 +52,7 @@ dotenv
 cookie-parser
 cors
 
-##Setup Instructions
+### Setup Instructions
 
 ```bash
 
@@ -68,7 +68,7 @@ npm install
 npm start
 
 ```
-##File Structure
+### File Structure
 
 ```bash
 .
@@ -88,7 +88,7 @@ npm start
 └── README.md
 ```
 
-##API Endpoints:
+##3 API Endpoints:
 ##User Authentication:
 POST /api/user/register
 
