@@ -16,10 +16,11 @@ app.use(express.json());
 app.use(cookieparser());
 app.get("/api", (req, res)=>{
   console.log("working")
+  res.send("hello world");
 })
 app.use("/api/user", userRoutes);
 app.use("/api/todo", todoRoutes);
 
-app.listen(5000, () => {
+app.listen(process.env.PORT, () => {
     console.log("Server Is Running");
   });

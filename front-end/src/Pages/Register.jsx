@@ -18,7 +18,7 @@ export default function Register() {
     ev.preventDefault(); 
     if(confirmPassword === password)
     {
-        const response= await fetch('http://localhost:5000/api/user/register',{
+        const response= await fetch('https://taskmanagerapi-bhku.onrender.com/api/user/register',{
             method:'POST',
             body: JSON.stringify({username,email,password}),
             headers:{'Content-type':'application/json'},

@@ -30,7 +30,7 @@ export default function TodoPage() {
   const [viewTodo, setViewTodo] = useState({ title: '', description: '', startDate: '', endDate: '' });
 
   const handleDelete = async (id) => {
-    const response= await fetch('http://localhost:5000/api/todo/deleteTodo',
+    const response= await fetch('https://taskmanagerapi-bhku.onrender.com/api/todo/deleteTodo',
       {
         method: 'DELETE',
         body: JSON.stringify({id}),
@@ -64,7 +64,7 @@ export default function TodoPage() {
     const taskWithStartDate = { ...currentTodo, startDate: today };
 
     if (currentTodo._id) {
-      const response= await fetch('http://localhost:5000/api/todo/editTodo',
+      const response= await fetch('https://taskmanagerapi-bhku.onrender.com/api/todo/editTodo',
         {
           method: 'PUT',
           body: JSON.stringify({ ...taskWithStartDate, endDate: currentTodo.endDate }),
@@ -82,7 +82,7 @@ export default function TodoPage() {
           toast.error("internal server error")
         }
     } else {
-      const response= await fetch('http://localhost:5000/api/todo/addTodo',
+      const response= await fetch('https://taskmanagerapi-bhku.onrender.com/api/todo/addTodo',
         {
           method: 'POST',
           body: JSON.stringify({ ...taskWithStartDate, endDate: currentTodo.endDate }),
@@ -120,7 +120,7 @@ export default function TodoPage() {
 
   function logout(ev){
     ev.preventDefault();
-    fetch('http://localhost:5000/api/user/logout',{
+    fetch('https://taskmanagerapi-bhku.onrender.com/api/user/logout',{
       credentials: 'include',
       method: 'POST',
     }).catch((err)=>{
@@ -144,7 +144,7 @@ export default function TodoPage() {
   }
 
   useEffect(()=>{
-    fetch(`http://localhost:5000/api/todo/getTodo/${userInfo?._id}`).then(response=>{
+    fetch(`https://taskmanagerapi-bhku.onrender.com/api/todo/getTodo/${userInfo?._id}`).then(response=>{
       response.json().then(todos=>{
          setTodos(todos);
       });
