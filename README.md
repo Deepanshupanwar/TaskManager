@@ -18,7 +18,7 @@ Tailwind
 ### Installation and Setup For local
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Deepanshupanwar/TaskManager.git
 cd front-end
 
 npm install
@@ -56,7 +56,7 @@ cors
 
 ```bash
 
-git clone https://github.com/yourusername/task-manager-backend.git
+git clone https://github.com/Deepanshupanwar/TaskManager.git
 cd back-end
 
 #create .env file
